@@ -6,7 +6,7 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "GroupPoseFrame", columnHash: 0x1771561e )]
+    [Sheet( "GroupPoseFrame", columnHash: 0x6499223f )]
     public class GroupPoseFrame : IExcelRow
     {
         
@@ -16,7 +16,6 @@ namespace Lumina.Excel.GeneratedSheets
         public int Unknown3;
         public uint Unknown4;
         public byte Unknown5;
-        public int Unknown54;
         public SeString Text;
         
         public uint RowId { get; set; }
@@ -33,8 +32,7 @@ namespace Lumina.Excel.GeneratedSheets
             Unknown3 = parser.ReadColumn< int >( 3 );
             Unknown4 = parser.ReadColumn< uint >( 4 );
             Unknown5 = parser.ReadColumn< byte >( 5 );
-            Unknown54 = parser.ReadColumn< int >( 6 );
-            Text = parser.ReadColumn< SeString >( 7 );
+            Text = parser.ReadColumn< SeString >( 6 );
         }
     }
 }

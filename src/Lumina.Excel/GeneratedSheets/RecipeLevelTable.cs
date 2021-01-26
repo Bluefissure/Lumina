@@ -6,7 +6,7 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "RecipeLevelTable", columnHash: 0xdc8d702b )]
+    [Sheet( "RecipeLevelTable", columnHash: 0xf24f1bf5 )]
     public class RecipeLevelTable : IExcelRow
     {
         
@@ -17,7 +17,6 @@ namespace Lumina.Excel.GeneratedSheets
         public ushort Difficulty;
         public uint Quality;
         public ushort Durability;
-        public ushort Unknown54;
         
         public uint RowId { get; set; }
         public uint SubRowId { get; set; }
@@ -34,7 +33,6 @@ namespace Lumina.Excel.GeneratedSheets
             Difficulty = parser.ReadColumn< ushort >( 4 );
             Quality = parser.ReadColumn< uint >( 5 );
             Durability = parser.ReadColumn< ushort >( 6 );
-            Unknown54 = parser.ReadColumn< ushort >( 7 );
         }
     }
 }

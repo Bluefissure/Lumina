@@ -6,11 +6,12 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "QuestDerivedClass", columnHash: 0xdcfd9eba )]
+    [Sheet( "QuestDerivedClass", columnHash: 0x5a516458 )]
     public class QuestDerivedClass : IExcelRow
     {
         
-        public LazyRow< ClassJob > ClassJob;
+        public LazyRow< Quest > Quest;
+        public byte Unknown1;
         
         public uint RowId { get; set; }
         public uint SubRowId { get; set; }
@@ -20,7 +21,8 @@ namespace Lumina.Excel.GeneratedSheets
             RowId = parser.Row;
             SubRowId = parser.SubRow;
 
-            ClassJob = new LazyRow< ClassJob >( lumina, parser.ReadColumn< byte >( 0 ), language );
+            Quest = new LazyRow< Quest >( lumina, parser.ReadColumn< uint >( 0 ), language );
+            Unknown1 = parser.ReadColumn< byte >( 1 );
         }
     }
 }

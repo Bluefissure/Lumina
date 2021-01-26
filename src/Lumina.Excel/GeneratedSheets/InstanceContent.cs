@@ -6,7 +6,7 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "InstanceContent", columnHash: 0xa4243e29 )]
+    [Sheet( "InstanceContent", columnHash: 0x768d21f2 )]
     public class InstanceContent : IExcelRow
     {
         public struct UnkStruct25Struct
@@ -71,8 +71,6 @@ namespace Lumina.Excel.GeneratedSheets
         public bool Unknown58;
         public ushort Unknown59;
         public ushort Unknown60;
-        public ushort Unknown540;
-        public ushort Unknown541;
         
         public uint RowId { get; set; }
         public uint SubRowId { get; set; }
@@ -147,8 +145,6 @@ namespace Lumina.Excel.GeneratedSheets
             Unknown58 = parser.ReadColumn< bool >( 58 );
             Unknown59 = parser.ReadColumn< ushort >( 59 );
             Unknown60 = parser.ReadColumn< ushort >( 60 );
-            Unknown540 = parser.ReadColumn< ushort >( 61 );
-            Unknown541 = parser.ReadColumn< ushort >( 62 );
         }
     }
 }

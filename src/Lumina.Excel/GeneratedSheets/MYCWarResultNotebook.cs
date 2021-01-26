@@ -6,14 +6,11 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "MYCWarResultNotebook", columnHash: 0x446c84d6 )]
+    [Sheet( "MYCWarResultNotebook", columnHash: 0x3b1d3c28 )]
     public class MYCWarResultNotebook : IExcelRow
     {
         
         public byte Number;
-        public byte Unknown540;
-        public byte Unknown541;
-        public LazyRow< Quest > Quest;
         public int Icon;
         public int Image;
         public byte Rarity;
@@ -30,15 +27,12 @@ namespace Lumina.Excel.GeneratedSheets
             SubRowId = parser.SubRow;
 
             Number = parser.ReadColumn< byte >( 0 );
-            Unknown540 = parser.ReadColumn< byte >( 1 );
-            Unknown541 = parser.ReadColumn< byte >( 2 );
-            Quest = new LazyRow< Quest >( lumina, parser.ReadColumn< int >( 3 ), language );
-            Icon = parser.ReadColumn< int >( 4 );
-            Image = parser.ReadColumn< int >( 5 );
-            Rarity = parser.ReadColumn< byte >( 6 );
-            NameJP = parser.ReadColumn< SeString >( 7 );
-            Name = parser.ReadColumn< SeString >( 8 );
-            Description = parser.ReadColumn< SeString >( 9 );
+            Icon = parser.ReadColumn< int >( 1 );
+            Image = parser.ReadColumn< int >( 2 );
+            Rarity = parser.ReadColumn< byte >( 3 );
+            NameJP = parser.ReadColumn< SeString >( 4 );
+            Name = parser.ReadColumn< SeString >( 5 );
+            Description = parser.ReadColumn< SeString >( 6 );
         }
     }
 }

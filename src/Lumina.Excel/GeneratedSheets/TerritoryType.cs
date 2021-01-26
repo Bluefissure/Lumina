@@ -6,7 +6,7 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "TerritoryType", columnHash: 0xb7598447 )]
+    [Sheet( "TerritoryType", columnHash: 0x5cbd7b58 )]
     public class TerritoryType : IExcelRow
     {
         
@@ -50,7 +50,6 @@ namespace Lumina.Excel.GeneratedSheets
         public bool Unknown37;
         public bool Unknown38;
         public bool Unknown39;
-        public bool Unknown54;
         
         public uint RowId { get; set; }
         public uint SubRowId { get; set; }
@@ -100,7 +99,6 @@ namespace Lumina.Excel.GeneratedSheets
             Unknown37 = parser.ReadColumn< bool >( 37 );
             Unknown38 = parser.ReadColumn< bool >( 38 );
             Unknown39 = parser.ReadColumn< bool >( 39 );
-            Unknown54 = parser.ReadColumn< bool >( 40 );
         }
     }
 }

@@ -6,7 +6,7 @@ using Lumina.Data.Structs.Excel;
 
 namespace Lumina.Excel.GeneratedSheets
 {
-    [Sheet( "TripleTriadCardResident", columnHash: 0x996e0a5e )]
+    [Sheet( "TripleTriadCardResident", columnHash: 0xcce12103 )]
     public class TripleTriadCardResident : IExcelRow
     {
         
@@ -19,8 +19,6 @@ namespace Lumina.Excel.GeneratedSheets
         public LazyRow< TripleTriadCardType > TripleTriadCardType;
         public ushort SaleValue;
         public byte SortKey;
-        public ushort[] Unknown54;
-        public LazyRow< Quest > Quest;
         
         public uint RowId { get; set; }
         public uint SubRowId { get; set; }
@@ -39,10 +37,6 @@ namespace Lumina.Excel.GeneratedSheets
             TripleTriadCardType = new LazyRow< TripleTriadCardType >( lumina, parser.ReadColumn< byte >( 6 ), language );
             SaleValue = parser.ReadColumn< ushort >( 7 );
             SortKey = parser.ReadColumn< byte >( 8 );
-            Unknown54 = new ushort[ 6 ];
-            for( var i = 0; i < 6; i++ )
-                Unknown54[ i ] = parser.ReadColumn< ushort >( 9 + i );
-            Quest = new LazyRow< Quest >( lumina, parser.ReadColumn< uint >( 15 ), language );
         }
     }
 }
